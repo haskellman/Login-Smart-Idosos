@@ -1,7 +1,6 @@
 # Login Smart Idosos NCD
 
 > implementação de uma tela de login no qual foi o desafio proposto pelo **NCD** para seu processo seletivo.
-.
 
 ## 💻 Pré-requisitos
 
@@ -13,7 +12,7 @@ Para instalar o projeto, siga estas etapas:
 
 Linux e macOS e Windows:
 ```
-git clone 
+git clone https://github.com/haskellman/Login-Smart-Idosos.git
 ```
 
 ## 🤝 Dev
