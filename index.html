@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Smart Idosos</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap.rtl.min" rel="stylesheet">
+  <link href="css/bootstrap-grid.css" rel="stylesheet">
+  <link href="css/bootstrap-grid.rtl.css" rel="stylesheet">
+  <link href="css/bootstrap-reboot.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;800&amp;family=Inter:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="navbar-brand" onclick="window.location.reload()">
+        <img src="./img/NCD.png" width="200" height="70">
+      </a>
+
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="https://ncd.ufes.br/index.html" class="nav_link">Home</a>
+          <a href="https://ncd.ufes.br/sobre.html" class="nav_link">Sobre</a>
+          <a href="https://ncd.ufes.br/equipe.html" class="nav_link">Equipe</a>
+          <a href="https://ncd.ufes.br/horarios.html" class="nav_link">Laboratório</a>
+          <a href="https://ncd.ufes.br/smartidosos.html" class="nav_link">Cursos</a>
+        </li>
+      </ul>
+      <div>
+        <input class="search" type="text" placeholder="Search.." name="search">
+        <button class="button" id="form-open">Login / Sign up</button>
+      </div>
+      
+    </nav>
+  </header>
+  <section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form-close"></i>
+
+      <!-- Login -->
+
+      <div class="form login_form">
+        <form action="#">
+          <h2>Login</h2>
+          <div class="input_box">
+            <input type="email" placeholder="E-mail" id="email" required>
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Senha" id="senha" required>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="option_field">
+            <span class="checkbox">
+              <input type="checkbox" id="check">
+              <label for="check">Lembrar de mim</label>
+            </span>
+            <a href="#">Esqueci a senha</a>
+          </div>
+          <button class="button" id="login-form-submit" onclick="login()" value="submit">Entrar</button>
+          <div class="login_signup">Não tem uma conta? <a href="#" id="signup">Registrar</a>
+        </form>
+      </div>
+    </div>
+
+      <!-- Registrar -->
+
+      <div class="form signup_form">
+        <form action="#">
+          <h2>Registrar</h2>
+          <div class="input_box">
+            <input type="email" placeholder="Digite o seu e-mail" id="r-email" required>
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Crie sua senha" id="r-senha" required>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Confirme sua senha" id="rc-senha" required>
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <button class="button" onclick="register()" value="submit">Registrar</button>
+          <div class="login_signup"> Já tem uma conta? <a href="#" id="login" >Faça o Login</a>
+        </form>
+      </div>
+  </section>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
